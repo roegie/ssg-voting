@@ -13,14 +13,13 @@
       </div>
     </section>
 
-    <!-- Conditionally render the Form component -->
     <Form v-if="showFormRef" />
   </main>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import Form from '../components/Form.vue'; // Import Form here
+import Form from '../components/Form.vue';
 
 const typedText = ref('');
 const showFormRef = ref(false);
