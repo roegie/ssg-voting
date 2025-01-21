@@ -3,6 +3,7 @@
       <h1>Your <span>{{ typedText }}</span>.</h1>
       <p id="desc">Welcome! This platform gives you the power to cast your vote, share your insights, and influence decisions with ease. Powered by cutting-edge technology, AISAT ensures every vote is counted and your voice is heard. Join us in shaping the future—your opinion matters!</p>
       <a id="signUp" href="">CAST VOTE</a>
+      <p>dsadsad</p>
       <section id="candidates">
         <label>candidates</label>
         <div id="candImages">
