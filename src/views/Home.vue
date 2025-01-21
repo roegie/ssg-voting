@@ -82,6 +82,16 @@
     display: inline-block;
     white-space: normal;
   }
+  #signUp {
+    display: block;
+    width: max-content;
+    margin-top: 1rem;
+    padding: 1.6rem 3.2rem;
+    color: #FFFFFF;
+    background: #3a4bd0;
+    border-radius: 1rem;
+    font-weight: 600;
+  }
   section {
     margin-top: 6rem;
   }
