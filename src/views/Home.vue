@@ -1,13 +1,4 @@
 <template>
-    <header>
-      <a id="logo" href="#">AISAT</a>
-      <nav>
-        <a id="navLink" href="">HOME</a>
-        <a id="navLink" href="">CONTACTS</a>
-        <a id="navLink" href="">FAQ</a>
-        <a id="navLink" href="">ABOUT</a>
-      </nav>
-    </header>
     <main>
       <h1>Your <span>{{ typedText }}</span>.</h1>
       <p id="desc">Welcome! This platform gives you the power to cast your vote, share your insights, and influence decisions with ease. Powered by cutting-edge technology, AISAT ensures every vote is counted and your voice is heard. Join us in shaping the future—your opinion matters!</p>
@@ -15,9 +6,9 @@
       <section id="candidates">
         <label>candidates</label>
         <div id="candImages">
-          <img src="/src/assets/layag.jpg" alt="Candidate 1">
-          <img src="/src/assets/tayog.jpg" alt="Candidate 2">
-          <img src="/src/assets/nigga.jpg" alt="Candidate 3">
+          <img src="/src/assets/layag.jpg" alt="Candidate">
+          <img src="/src/assets/tayog.jpg" alt="Candidate">
+          <img src="/src/assets/nigga.jpg" alt="Candidate">
         </div>
       </section>
     </main>
@@ -66,47 +57,6 @@
   </script>
   
   <style scoped>
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    right: 2rem;
-    padding: 1rem 2rem;
-    background: #00000016;
-    border-radius: 1.6rem;
-    backdrop-filter: blur(60px);
-    animation: downSyndrome 1.6s;
-  }
-  #logo {
-    user-select: none;
-    color: #3a4bd0;
-    text-shadow: 0 0 0.6rem yellow;
-    font: 800 5rem serif;
-  }
-  nav {
-    display: flex;
-    gap: 1.6rem;
-  }
-  #navLink {
-    font: 500 2rem Lora, serif;
-  }
-  #navLink:hover {
-    color: #3a4bd0;
-    text-shadow: 0 0 1rem #3a4bd0;
-  }
-  #signUp {
-    display: block;
-    width: max-content;
-    margin-top: 1rem;
-    padding: 1.6rem 3.2rem;
-    color: #FFFFFF;
-    background: #3a4bd0;
-    border-radius: 1rem;
-    font-weight: 600;
-  }
   main {
     padding: 18rem 4rem 0;
     animation: upSyndrome 1.6s;
