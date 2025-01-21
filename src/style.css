@@ -1,0 +1,21 @@
+html {
+    font-size: 10px;
+    background: #ffffff;
+}
+body {
+    height: 200vh;
+}
+a {
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    transition: 0.3s;
+    font: 1.6rem Lora, serif;
+}
+::selection {
+    background: #3a4bd040;
+}
