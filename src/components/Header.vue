@@ -24,6 +24,7 @@
     border-radius: 1.6rem;
     backdrop-filter: blur(60px);
     animation: downSyndrome 1.6s;
+    z-index: 1000;
   }
   #logo {
     user-select: none;
