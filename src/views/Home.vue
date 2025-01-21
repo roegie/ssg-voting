@@ -10,6 +10,7 @@
           <img src="/src/assets/tayog.jpg" alt="Candidate">
           <img src="/src/assets/nigga.jpg" alt="Candidate">
         </div>
+        committee
       </section>
     </main>
   </template>
