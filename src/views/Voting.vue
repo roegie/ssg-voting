@@ -5,7 +5,12 @@
         <a class="card">
             <img src="/src/assets/president.jpg">
             <h2>Vote</h2>
-            <h3 class="name">Jabek Ahalani</h3>
+            <h3 class="name">Junek Bonyok</h3>
+        </a>
+        <a class="card">
+            <img src="/src/assets/vice-president.jpg">
+            <h2>Vote</h2>
+            <h3 class="name">Shanty Dela Cruz Lay</h3>
         </a>
       </section>
     </main>
@@ -36,20 +41,22 @@
         display: grid;
         position: relative;
         cursor: pointer;
-        overflow: hidden;
-        border-radius: 1.6rem;
     }
     .card:hover {
         transform: translateY(-6px);
     }
+    .card:hover > img {
+        filter: brightness(80%);
+    }
     .card:hover > h2, .card:hover > .name {
-        opacity: 1
+        opacity: 1;
     }
     .card img {
       object-fit: cover;
       width: 100%;
       aspect-ratio: 3/4;
       background: #00000016;
+      border-radius: 1.6rem;
     }
     .card h2 {
         position: absolute;
@@ -64,17 +71,12 @@
         transform: translate(-50%, -50%);
     }
     .name {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        left: 50%;
-        bottom: 0;
-        opacity: 0;
-        padding: 2rem 0 0.6rem;
-        color: #FFFFFF;
-        background: linear-gradient(transparent, #000000);
-        font: 500 3rem "Albert Sans", sans-serif;
-        transform: translateX(-50%);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 99%;
+        margin-top: 0.6rem;
+        font: 500 2.6rem "Albert Sans", sans-serif;
     }
     @keyframes upSyndrome {
       0% {

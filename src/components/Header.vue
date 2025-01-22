@@ -5,7 +5,6 @@
       <router-link id="navLink" to="/">HOME</router-link>
       <router-link id="navLink" to="/voting">VOTING</router-link>
       <router-link id="navLink" to="">CONTACTS</router-link>
-      <router-link id="navLink" to="">FAQ</router-link>
       <router-link id="navLink" to="">ABOUT</router-link>
     </nav>
   </header>
