@@ -5,12 +5,14 @@
         <a class="card">
             <img src="/src/assets/president.jpg">
             <h2>Vote</h2>
-            <h3 class="name">Junek Bonyok</h3>
+            <h3 class="name">Candidate Name 1</h3>
+            <p class="partylist">Partylist 1</p>
         </a>
         <a class="card">
-            <img src="/src/assets/vice-president.jpg">
+            <img src="/src/assets/president.jpg">
             <h2>Vote</h2>
-            <h3 class="name">Shanty Dela Cruz Lay</h3>
+            <h3 class="name">Candidate Name 2</h3>
+            <p class="partylist">Partylist 2</p>
         </a>
       </section>
     </main>
@@ -46,7 +48,7 @@
         transform: translateY(-6px);
     }
     .card:hover > img {
-        filter: brightness(80%);
+        filter: brightness(70%);
     }
     .card:hover > h2, .card:hover > .name {
         opacity: 1;
@@ -67,7 +69,6 @@
         padding: 0.6rem 1.2rem;
         backdrop-filter: blur(20px);
         border-radius: 10rem;
-        font: 600 2rem "Albert Sans";
         transform: translate(-50%, -50%);
     }
     .name {

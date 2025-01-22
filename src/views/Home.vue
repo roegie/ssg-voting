@@ -68,6 +68,10 @@ onMounted(() => {
 
 <style scoped>
   main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 14rem 4rem 0;
     animation: upSyndrome 1.6s;
   }
