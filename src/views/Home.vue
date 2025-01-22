@@ -13,14 +13,13 @@
       </div>
     </section>
 
-    <!-- Conditionally render the Form component -->
     <Form v-if="showFormRef" />
   </main>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import Form from '../components/Form.vue'; // Import Form here
+import Form from '../components/Form.vue';
 
 const typedText = ref('');
 const showFormRef = ref(false);
@@ -67,9 +66,9 @@ onMounted(() => {
 });
 </script>
 
-  <style scoped>
+<style scoped>
   main {
-    padding: 18rem 4rem 0;
+    padding: 14rem 4rem 0;
     animation: upSyndrome 1.6s;
   }
   h1 {
@@ -103,7 +102,7 @@ onMounted(() => {
     font-weight: 600;
   }
   section {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
   #candidates label {
     text-transform: uppercase;
@@ -141,4 +140,3 @@ onMounted(() => {
     }
   }
   </style>
-  
