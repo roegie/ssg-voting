@@ -1,7 +1,14 @@
 <template>
     <main>
-      <h1>Cast your vote.</h1>
-      <Form v-if="showFormRef" />
+      <h1>President</h1>
+      <section id="candidates">
+        <a class="card">
+            <img src="/src/assets/president.jpg">
+            <div class="info">
+                <h2 id="name">Jabek Alahani</h2>
+            </div>
+        </a>
+      </section>
     </main>
 </template>
   
@@ -9,7 +16,7 @@
   
   <style scoped>
     main {
-      padding: 12rem 4rem 0;
+      padding: 14rem 4rem 0;
       animation: upSyndrome 1.6s;
     }
     h1 {
@@ -20,47 +27,38 @@
       background: linear-gradient(to right, #3a4bd040, transparent);
       font: 8.6rem Lora, serif;
     }
-    span {
-      color: inherit;
-      font: inherit;
-    }
-    #desc {
-      width: 80%;
-      padding: 1rem 0 0;
-      font: 2rem Lora, serif;
-      overflow: hidden;
-      display: inline-block;
-      white-space: normal;
-    }
-    #signUp {
-      display: block;
-      width: max-content;
-      margin-top: 1rem;
-      padding: 1.6rem 3.2rem;
-      color: #FFFFFF;
-      background: #3a4bd0;
-      border-radius: 1rem;
-      font-weight: 600;
-    }
-    section {
-      margin-top: 6rem;
-    }
-    #candidates label {
-      text-transform: uppercase;
-      font: 500 2rem Lora, serif;
-    }
-    #candImages {
+    #candidates {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.6rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
     }
-    #candImages img {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+        border-radius: 1.6rem;
+        background: #00000016;
+    }
+    #candidates img {
       object-fit: cover;
       width: 100%;
-      aspect-ratio: 16/9;
+      aspect-ratio: 3/4;
       background: #00000016;
-      border-radius: 1.6rem;
+    }
+    #candidates button {
+      cursor: pointer;
+      padding: 1rem 2rem;
+      border: none;
+      color: #FFF;
+      background: #3a4bd0;
+      font-size: 3.6rem;
+    }
+    .info {
+        padding: 1.6rem;
+    }
+    #name {
+        font-size: 3rem;
     }
     @keyframes upSyndrome {
       0% {

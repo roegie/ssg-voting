@@ -68,7 +68,7 @@ onMounted(() => {
 
 <style scoped>
   main {
-    padding: 18rem 4rem 0;
+    padding: 14rem 4rem 0;
     animation: upSyndrome 1.6s;
   }
   h1 {
@@ -102,7 +102,7 @@ onMounted(() => {
     font-weight: 600;
   }
   section {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
   #candidates label {
     text-transform: uppercase;
