@@ -81,7 +81,7 @@ onMounted(() => {
     padding-left: 2rem;
     border-left: 0.6rem solid #3a4bd0;
     background: linear-gradient(to right, #3a4bd040, transparent);
-    font: 8.6rem Lora, serif;
+    font: 8.6rem "Instrument Serif", serif;
   }
   span {
     color: inherit;
@@ -89,8 +89,9 @@ onMounted(() => {
   }
   #desc {
     width: 80%;
+    color: #404040;
     padding: 1rem 0 0;
-    font: 2rem Lora, serif;
+    font: 2rem Arial, sans-serif;
     overflow: hidden;
     display: inline-block;
     white-space: normal;
@@ -110,7 +111,7 @@ onMounted(() => {
   }
   #candidates label {
     text-transform: uppercase;
-    font: 500 2rem Lora, serif;
+    font: 500 2rem Arial, sans-serif;
   }
   #candImages {
     display: grid;
