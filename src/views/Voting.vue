@@ -4,17 +4,16 @@
       <section id="candidates">
         <a class="card">
             <img src="/src/assets/president.jpg">
-            <div class="info">
-                <h2 id="name">Jabek Alahani</h2>
-            </div>
+            <h2>Vote</h2>
+            <h3 class="name">Jabek Ahalani</h3>
         </a>
       </section>
     </main>
 </template>
   
 <script setup></script>
-  
-  <style scoped>
+
+<style scoped>
     main {
       padding: 14rem 4rem 0;
       animation: upSyndrome 1.6s;
@@ -29,36 +28,53 @@
     }
     #candidates {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 1.6rem;
       margin-top: 4rem;
     }
     .card {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        cursor: pointer;
         overflow: hidden;
         border-radius: 1.6rem;
-        background: #00000016;
     }
-    #candidates img {
+    .card:hover {
+        transform: translateY(-6px);
+    }
+    .card:hover > h2, .card:hover > .name {
+        opacity: 1
+    }
+    .card img {
       object-fit: cover;
       width: 100%;
       aspect-ratio: 3/4;
       background: #00000016;
     }
-    #candidates button {
-      cursor: pointer;
-      padding: 1rem 2rem;
-      border: none;
-      color: #FFF;
-      background: #3a4bd0;
-      font-size: 3.6rem;
+    .card h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        color: #FFF;
+        padding: 0.6rem 1.2rem;
+        backdrop-filter: blur(20px);
+        border-radius: 10rem;
+        font: 600 2rem "Albert Sans";
+        transform: translate(-50%, -50%);
     }
-    .info {
-        padding: 1.6rem;
-    }
-    #name {
-        font-size: 3rem;
+    .name {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        padding: 1rem 0;
+        color: #FFFFFF;
+        background: linear-gradient(transparent, #000000);
+        font: 500 3rem "Albert Sans", sans-serif;
+        transform: translateX(-50%);
     }
     @keyframes upSyndrome {
       0% {
@@ -78,4 +94,4 @@
         transform: none;
       }
     }
-    </style>
+</style>
