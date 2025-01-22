@@ -70,7 +70,7 @@
         left: 50%;
         bottom: 0;
         opacity: 0;
-        padding: 1rem 0;
+        padding: 2rem 0 0.6rem;
         color: #FFFFFF;
         background: linear-gradient(transparent, #000000);
         font: 500 3rem "Albert Sans", sans-serif;
