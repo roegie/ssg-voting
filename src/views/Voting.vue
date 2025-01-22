@@ -31,7 +31,7 @@
       padding-left: 2rem;
       border-left: 0.6rem solid #3a4bd0;
       background: linear-gradient(to right, #3a4bd040, transparent);
-      font: 8.6rem Lora, serif;
+      font: 8.6rem "Instrument Serif", serif;
     }
     #candidates {
       display: grid;
