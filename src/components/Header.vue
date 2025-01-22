@@ -1,13 +1,14 @@
 <template>
-    <header>
-      <a id="logo" href="#">AISAT</a>
-      <nav>
-        <a id="navLink" href="">HOME</a>
-        <a id="navLink" href="">CONTACTS</a>
-        <a id="navLink" href="">FAQ</a>
-        <a id="navLink" href="">ABOUT</a>
-      </nav>
-    </header>
+  <header>
+    <a id="logo" href="#">AISAT</a>
+    <nav>
+      <router-link id="navLink" to="/">HOME</router-link>
+      <router-link id="navLink" to="/voting">VOTING</router-link>
+      <router-link id="navLink" to="">CONTACTS</router-link>
+      <router-link id="navLink" to="">FAQ</router-link>
+      <router-link id="navLink" to="">ABOUT</router-link>
+    </nav>
+  </header>
 </template>
 
 <style scoped>

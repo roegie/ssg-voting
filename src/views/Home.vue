@@ -66,7 +66,7 @@ onMounted(() => {
 });
 </script>
 
-  <style scoped>
+<style scoped>
   main {
     padding: 18rem 4rem 0;
     animation: upSyndrome 1.6s;
@@ -140,4 +140,3 @@ onMounted(() => {
     }
   }
   </style>
-  
