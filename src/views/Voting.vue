@@ -5,7 +5,14 @@
         <a class="card">
             <img src="/src/assets/president.jpg">
             <h2>Vote</h2>
-            <h3 class="name">Jabek Ahalani</h3>
+            <h3 class="name">Candidate Name 1</h3>
+            <p class="partylist">Partylist 1</p>
+        </a>
+        <a class="card">
+            <img src="/src/assets/president.jpg">
+            <h2>Vote</h2>
+            <h3 class="name">Candidate Name 2</h3>
+            <p class="partylist">Partylist 2</p>
         </a>
       </section>
     </main>
@@ -36,20 +43,22 @@
         display: grid;
         position: relative;
         cursor: pointer;
-        overflow: hidden;
-        border-radius: 1.6rem;
     }
     .card:hover {
         transform: translateY(-6px);
     }
+    .card:hover > img {
+        filter: brightness(70%);
+    }
     .card:hover > h2, .card:hover > .name {
-        opacity: 1
+        opacity: 1;
     }
     .card img {
       object-fit: cover;
       width: 100%;
       aspect-ratio: 3/4;
       background: #00000016;
+      border-radius: 1.6rem;
     }
     .card h2 {
         position: absolute;
@@ -60,21 +69,15 @@
         padding: 0.6rem 1.2rem;
         backdrop-filter: blur(20px);
         border-radius: 10rem;
-        font: 600 2rem "Albert Sans";
         transform: translate(-50%, -50%);
     }
     .name {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        left: 50%;
-        bottom: 0;
-        opacity: 0;
-        padding: 1rem 0;
-        color: #FFFFFF;
-        background: linear-gradient(transparent, #000000);
-        font: 500 3rem "Albert Sans", sans-serif;
-        transform: translateX(-50%);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 99%;
+        margin-top: 0.6rem;
+        font: 500 2.6rem "Albert Sans", sans-serif;
     }
     @keyframes upSyndrome {
       0% {
