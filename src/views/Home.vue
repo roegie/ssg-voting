@@ -7,9 +7,11 @@
     <section id="candidates">
       <label>candidates</label>
       <div id="candImages">
-        <img src="/src/assets/layag.jpg" alt="Candidate">
-        <img src="/src/assets/tayog.jpg" alt="Candidate">
-        <img src="/src/assets/nigga.jpg" alt="Candidate">
+        <img :src="images[currentImageIndex]" alt="Candidate">
+      </div>
+      <div id="slideshow-controls">
+        <button @click="prevImage"><</button>
+        <button @click="nextImage">></button>
       </div>
     </section>
 
@@ -61,8 +63,31 @@ const showForm = () => {
   showFormRef.value = true;
 };
 
+// Slideshow logic
+const images = ref([
+  '/src/assets/layag.jpg',
+  '/src/assets/tayog.jpg',
+  '/src/assets/nigga.jpg'
+]);
+const currentImageIndex = ref(0);
+
+const startSlideshow = () => {
+  setInterval(() => {
+    nextImage();
+  }, 5000);
+};
+
+const nextImage = () => {
+  currentImageIndex.value = (currentImageIndex.value + 1) % images.value.length;
+};
+
+const prevImage = () => {
+  currentImageIndex.value = (currentImageIndex.value - 1 + images.value.length) % images.value.length;
+};
+
 onMounted(() => {
   typeText();
+  startSlideshow();
 });
 </script>
 
@@ -115,16 +140,27 @@ onMounted(() => {
   }
   #candImages {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 1.6rem;
     margin-top: 2rem;
   }
   #candImages img {
     object-fit: cover;
     width: 100%;
-    aspect-ratio: 16/9;
+    height: 70rem; 
     background: #00000016;
     border-radius: 1.6rem;
+  }
+  #slideshow-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  #slideshow-controls button {
+    padding: 1rem 3rem;
+    font-size:2rem;
+    cursor: pointer;
   }
   @keyframes upSyndrome {
     0% {
@@ -144,4 +180,4 @@ onMounted(() => {
       transform: none;
     }
   }
-  </style>
+</style>
