@@ -63,7 +63,7 @@ const showForm = () => {
   showFormRef.value = true;
 };
 
-// Slideshow logic
+
 const images = ref([
   '/src/assets/layag.jpg',
   '/src/assets/tayog.jpg',
@@ -136,20 +136,26 @@ onMounted(() => {
   }
   #candidates label {
     text-transform: uppercase;
-    font: 500 2rem Arial, sans-serif;
+    font: 10rem "Instrument Serif", serif;
+   
+    
   }
   #candImages {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.6rem;
-    margin-top: 2rem;
+    margin-top: -4rem;
+     
   }
   #candImages img {
     object-fit: cover;
     width: 100%;
-    height: 70rem; 
+    height: 50rem; 
     background: #00000016;
     border-radius: 1.6rem;
+    aspect-ratio: 16/9;
+
+
   }
   #slideshow-controls {
     display: flex;
@@ -158,9 +164,14 @@ onMounted(() => {
     margin-top: 1rem;
   }
   #slideshow-controls button {
-    padding: 1rem 3rem;
-    font-size:2rem;
-    cursor: pointer;
+    display: block;
+    width: max-content;
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    color: #FFFFFF;
+    background: #3a4bd0;
+    border-radius: 1rem;
+    font-weight: 600;
   }
   @keyframes upSyndrome {
     0% {
