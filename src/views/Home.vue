@@ -174,10 +174,12 @@ section {
 #slideshow-controls button {
   display: block;
   width: max-content;
+  cursor: pointer;
   margin-top: 1rem;
   padding: 1rem 2.5rem;
   color: #FFFFFF;
   background: #3a4bd0;
+  border: none;
   border-radius: 1rem;
   font-weight: 600;
 }
