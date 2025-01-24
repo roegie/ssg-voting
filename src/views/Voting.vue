@@ -22,23 +22,28 @@
 
 <style scoped>
     main {
-      padding: 14rem 4rem 0;
-      animation: upSyndrome 1.6s;
-    }
-    h1 {
-      width: max-content;
-      color: #000000;
-      padding-left: 2rem;
-      border-left: 0.6rem solid #3a4bd0;
-      background: linear-gradient(to right, #3a4bd040, transparent);
-      font: 8.6rem "Instrument Serif", serif;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 14rem 4rem 0;
+    animation: upSyndrome 1.6s;
+  }
+  h1 {
+    width: max-content;
+    color: #000000;
+    padding-left: 2rem;
+    border-left: 0.6rem solid #3a4bd0;
+    background: linear-gradient(to right, #3a4bd040, transparent);
+    font: 8.6rem "Instrument Serif", serif;
+  }
     #candidates {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.6rem;
-      margin-top: 4rem;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+    margin-top: 4rem;
+   
+  }
     .card {
         display: grid;
         position: relative;
