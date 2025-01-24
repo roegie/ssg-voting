@@ -24,7 +24,7 @@ header {
   border-radius: 1.6rem;
   backdrop-filter: blur(60px);
   animation: downSyndrome 1.6s;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 #logo {
