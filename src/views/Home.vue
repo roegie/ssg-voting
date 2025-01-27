@@ -1,62 +1,72 @@
 <template>
-    <main>
-      <h1>Your <span>{{ typedText }}</span>.</h1>
-      <p id="desc">Welcome! This platform gives you the power to cast your vote, share your insights, and influence decisions with ease. Powered by cutting-edge technology, AISAT ensures every vote is counted and your voice is heard. Join us in shaping the future—your opinion matters!</p>
-      <a id="signUp" href="">CAST VOTE</a>
-      <p>dsadsad</p>
-      <section id="candidates">
-        <label>candidates</label>
-        <div id="candImages">
-          <img src="/src/assets/layag.jpg" alt="Candidate">
-          <img src="/src/assets/tayog.jpg" alt="Candidate">
-          <img src="/src/assets/nigga.jpg" alt="Candidate">
-        </div>
-      </section>
-    </main>
-  </template>
-  
-  <script setup>
-  import { ref, onMounted } from 'vue';
-  
-  const typedText = ref('');
-  const phrases = ['vote', 'decision', 'choice', 'rights', 'responsibility', 'voice', 'influence'];5
-  
-  let currentPhraseIndex = 0;
-  let currentText = '';
-  let isDeleting = false;
-  let charIndex = 0;
-  const typingSpeed = 100;
-  const deletingSpeed = 50;
-  const pauseDuration = 1500;
-  
-  const typeText = () => {
-    const phrase = phrases[currentPhraseIndex];
-  
-    if (isDeleting) {
-      currentText = phrase.substring(0, charIndex--);
-    } else {
-      currentText = phrase.substring(0, charIndex++);
-    }
-  
-    typedText.value = currentText;
-  
-    if (!isDeleting && charIndex === phrase.length) {
-      setTimeout(() => {
-        isDeleting = true;
-      }, pauseDuration);
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-    }
-  
-    setTimeout(typeText, isDeleting ? deletingSpeed : typingSpeed);
-  };
-  
-  onMounted(() => {
-    typeText();
-  });
-  </script>
-  
+  <main>
+    <h1>Your <span>{{ typedText }}</span>.</h1>
+    <p id="desc">Welcome! This platform gives you the power to cast your vote, share your insights, and influence decisions with ease. Powered by cutting-edge technology, AISAT ensures every vote is counted and your voice is heard. Join us in shaping the future—your opinion matters!</p>
+    <a id="signUp" href="#" @click.prevent="showForm">CAST VOTE</a>
+    
+    <section id="candidates">
+      <label>candidates</label>
+      <div id="candImages">
+        <img src="/src/assets/layag.jpg" alt="Candidate">
+        <img src="/src/assets/tayog.jpg" alt="Candidate">
+        <img src="/src/assets/nigga.jpg" alt="Candidate">
+      </div>
+    </section>
+
+    <!-- Conditionally render the Form component -->
+    <Form v-if="showFormRef" />
+  </main>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue';
+import Form from '../components/Form.vue'; // Import Form here
+
+const typedText = ref('');
+const showFormRef = ref(false);
+
+const phrases = ['vote', 'decision', 'choice', 'rights', 'responsibility', 'voice', 'influence'];
+
+let currentPhraseIndex = 0;
+let currentText = '';
+let isDeleting = false;
+let charIndex = 0;
+const typingSpeed = 100;
+const deletingSpeed = 50;
+const pauseDuration = 1500;
+
+const typeText = () => {
+  const phrase = phrases[currentPhraseIndex];
+
+  if (isDeleting) {
+    currentText = phrase.substring(0, charIndex--);
+  } else {
+    currentText = phrase.substring(0, charIndex++);
+  }
+
+  typedText.value = currentText;
+
+  if (!isDeleting && charIndex === phrase.length) {
+    setTimeout(() => {
+      isDeleting = true;
+    }, pauseDuration);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+  }
+
+  setTimeout(typeText, isDeleting ? deletingSpeed : typingSpeed);
+};
+
+const showForm = () => {
+  showFormRef.value = true;
+};
+
+onMounted(() => {
+  typeText();
+});
+</script>
+
   <style scoped>
   main {
     padding: 18rem 4rem 0;
