@@ -8,6 +8,9 @@ body {
 a {
     text-decoration: none;
 }
+img {
+    user-select: none;
+}
 * {
     margin: 0;
     padding: 0;
