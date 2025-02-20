@@ -65,7 +65,7 @@ const showForm = () => {
 
 
 const images = ref([
-  '/src/assets/layag.jpg',
+  'https:i.ibb.co/wprDd1p/202250128-132217.jpg',
   '/src/assets/tayog.jpg',
   '/src/assets/nigga.jpg'
 ]);

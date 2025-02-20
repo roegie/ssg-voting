@@ -6,45 +6,209 @@
         <img src="/src/assets/president.jpg">
         <h2>Vote</h2>
         <h3 class="name">Candidate Name 1</h3>
-        <p class="partylist">Partylist 1</p>
+        <p class="partylist">Tayog</p>
       </a>
       <a class="card" href="#vp">
         <img src="/src/assets/president.jpg">
         <h2>Vote</h2>
         <h3 class="name">Candidate Name 2</h3>
-        <p class="partylist">Partylist 2</p>
+        <p class="partylist">Layag</p>
       </a>
     </section>
+
     <h1>Vice President</h1>
     <section id="vp">
       <a class="card">
-        <img src="/src/assets/vice-president.jpg">
+        <img src="/src/assets/president.jpg">
         <h2>Vote</h2>
         <h3 class="name">Candidate Name 1</h3>
-        <p class="partylist">Partylist 1</p>
+        <p class="partylist">Tayog</p>
       </a>
       <a class="card">
-        <img src="/src/assets/vice-president.jpg">
+        <img src="/src/assets/president.jpg">
         <h2>Vote</h2>
         <h3 class="name">Candidate Name 2</h3>
-        <p class="partylist">Partylist 2</p>
+        <p class="partylist">Layag</p>
       </a>
     </section>
+
     <h1>Secretary</h1>
     <section id="vp">
       <a class="card">
-        <img src="/src/assets/secretary.jpg">
+        <img src="/src/assets/president.jpg">
         <h2>Vote</h2>
         <h3 class="name">Candidate Name 1</h3>
-        <p class="partylist">Partylist 1</p>
+        <p class="partylist">Tayog</p>
       </a>
       <a class="card">
-        <img src="/src/assets/secretary.jpg">
+        <img src="/src/assets/president.jpg">
         <h2>Vote</h2>
         <h3 class="name">Candidate Name 2</h3>
-        <p class="partylist">Partylist 2</p>
+        <p class="partylist">Layag</p>
       </a>
     </section>
+
+    <h1>Treasurer</h1>
+    <section id="vp">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>Auditor</h1>
+    <section id="auditor">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>Peace Officer</h1>
+    <section id="peace-officer">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>Public Information Officer</h1>
+    <section id="public-info-officer">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>Social Media Manager</h1>
+    <section id="social-media-manager">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>ABM Representative</h1>
+    <section id="abm-representative">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>GAS Representative</h1>
+    <section id="gas-representative">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>ICT Representative</h1>
+    <section id="ict-representative">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>HE Representative</h1>
+    <section id="he-representative">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+    <h1>HUMMS Representative</h1>
+    <section id="humms-representative">
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 1</h3>
+        <p class="partylist">Tayog</p>
+      </a>
+      <a class="card">
+        <img src="/src/assets/president.jpg">
+        <h2>Vote</h2>
+        <h3 class="name">Candidate Name 2</h3>
+        <p class="partylist">Layag</p>
+      </a>
+    </section>
+
+
   </main>
 </template>
 
