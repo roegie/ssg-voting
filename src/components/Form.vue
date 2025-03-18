@@ -28,11 +28,9 @@ const handleSubmit = () => {
     validationMessage.value = 'Student ID must be 6 digits';
   } else {
     validationMessage.value = '';
-    // Handle form submission
   }
 };
 
-// Custom directive to enforce input length
 const vValidateLength = {
   mounted(el) {
     el.addEventListener('input', () => {
@@ -88,10 +86,6 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .error-message {
   color: red;
 }
